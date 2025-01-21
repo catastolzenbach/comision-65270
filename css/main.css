@@ -31,8 +31,6 @@ header nav ul li a {
     color: black;
 }
 
-
-
 /* formato texto e imagenes en columnas */
 #momentos-especiales {
     display: grid;
@@ -144,7 +142,6 @@ header nav ul li a {
 #informacion-importante div {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     text-align: center;
     width: 130px;
@@ -162,12 +159,6 @@ header nav ul li a {
     height: 20px;
 }
 
-/* estilo imagenes */
-#informacion-importante img {
-    width: auto;
-    height: 50px;
-    margin: 5px 0;
-}
 
 
 
