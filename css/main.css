@@ -517,6 +517,7 @@ footer p {
     }
 }
 
+
 /* celulares menores a 768px*/
 @media (max-width: 768px) {
     .navegacion-principal {
