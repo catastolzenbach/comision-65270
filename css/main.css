@@ -3,34 +3,77 @@ body {
     background-color: white;
 }
 
-
-
-/* tamaño logo */
-header img {
-    width: 10%;
-    height: auto;
+/* HEADER */
+/* barra superior */
+.barra-superior {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+    font-size: 18px;
 }
 
-/* eliminar puntos y dejar horizontales */
-header nav ul {
-    list-style: none;
+/* navegacion principal */
+.navegacion-principal {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+/* tamaño logo */
+.logo {
+    height: 40px;
+}
+
+/* menú de la navegación principal */
+.navegacion-principal nav ul {
+    display: flex;
+    list-style: none;
+    gap: 120px;
     padding: 10px;
     margin: 20px;
     background-color: #d4f0f5;
 }
 
-/* espacio margenes lista */
-header nav ul li {
-    margin-right: auto;
+/* lista de la navegacioó principar */
+.navegacion-principal nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
 }
 
-/* eliminar subrayado y color negro */
-header nav ul li a {
+/* color al pasar el cursos */
+.navegacion-principal nav ul li a:hover {
+    color: #007bff;
+}
+
+/* opciones (búsqueda y carrito de compras) */
+.opciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.opciones input {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 6px 20px;
+    font-size: 14px;
+}
+
+.icono-carrito {
+    font-size: 18px;
     text-decoration: none;
     color: black;
 }
 
+/* MOMENTOS ESPECIALES */
 /* formato texto e imagenes en columnas */
 #momentos-especiales {
     display: grid;
@@ -63,8 +106,7 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-
-
+/* PRODUCTOS FAVORITOS */
 /* formato texto */
 #productos-favoritos h1 {
     margin: 35px;
@@ -87,8 +129,7 @@ header nav ul li a {
     border-radius: 5px;
 }
 
-
-
+/* CATEGORIAS DE PRODUCTOS */
 /* formato texto */
 #categorias-productos h1 {
     margin: 35px;
@@ -125,8 +166,7 @@ header nav ul li a {
     font-weight: bold;
 }
 
-
-
+/* INFORMACIÓN IMPORTANTE */
 /* fila para las imagenes y texto */
 #informacion-importante {
     display: flex;
@@ -142,6 +182,7 @@ header nav ul li a {
 #informacion-importante div {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     text-align: center;
     width: 130px;
@@ -159,9 +200,14 @@ header nav ul li a {
     height: 20px;
 }
 
+/* estilo imagenes */
+#informacion-importante img {
+    width: auto;
+    height: 50px;
+    margin: 5px 0;
+}
 
-
-
+/* FOOTER */
 /* formato footer */
 footer {
     display: flex;
@@ -174,7 +220,6 @@ footer {
 footer p {
     margin: 15px;
 }
-
 
 
 /* estilos pagina new */
@@ -404,4 +449,108 @@ footer p {
     padding: 10px 15;
     position: fixed;
     bottom: 0;
+}
+
+
+
+/* MEDIA QUERIES PARA DIF DISPOSITIVOS */
+/* computadores mayores a 1024px */
+@media (min-widht: 1025px) {
+    .navegacion-principal nav ul {
+        gap: 120px;
+    }
+
+    #momentos-especiales {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    #momentos-especiales div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #productos-favoritos div {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #categorias-productos div {
+        grid-template-columns: repeat (3, 1fr);
+    }
+
+    #informacion-importante {
+        flex-direction: row;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* ipad o tablets entre 768px y 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navegacion-principal nav ul {
+        gap: 40px;
+    }
+
+    #momentos-especiales {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #momentos-especiales div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #productos-favoritos div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #categorias-productos div {
+        grid-template-columns: repeat (2, 1fr);
+    }
+
+    #informacion-importante {
+        flex-direction: row;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+}
+
+/* celulares menores a 768px*/
+@media (max-width: 768px) {
+    .navegacion-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion-principal nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #momentos-especiales {
+        grid-template-columns: 1fr;
+    }
+
+    #momentos-especiales div {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #productos-favoritos div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #categorias-productos div {
+        grid-template-columns: repeat (1, 1fr);
+    }
+
+    #informacion-importante {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
