@@ -33,7 +33,7 @@ body {
 .navegacion-principal nav ul {
     display: flex;
     list-style: none;
-    gap: 120px;
+    gap: 45px;
     padding: 10px;
     margin: 20px;
     background-color: #d4f0f5;
@@ -51,6 +51,26 @@ body {
 /* color al pasar el cursos */
 .navegacion-principal nav ul li a:hover {
     color: #007bff;
+}
+
+/* estilo bade del menú hamburguesa */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* ocultar checkbox */
+#menu-toggle {
+    display: none;
 }
 
 /* opciones (búsqueda y carrito de compras) */
@@ -222,29 +242,35 @@ footer p {
 }
 
 
+/* PAGINA NEW */
 /* estilos pagina new */
 .pagina-new {
     background-color: white;
     color: black;
 }
+
 .pagina-new header nav ul li {
     display: flex;
 }
+
 /* estilo texto */
 .pagina-new header nav ul li a {
     text-decoration: none;
     color: black;
 }
+
 /* estilo texto principal */
 .pagina-new main h1 {
     text-align: center;
     margin-top: 20px;
 }
+
 /* estilo texto secundario */
 .pagina-new main h3 {
     text-align: center;
     line-height: 1.6;
 }
+
 /* estilo pie de pagina */
 .pagina-new footer {
     text-align: center;
@@ -254,30 +280,35 @@ footer p {
 }
 
 
-
+/* PAGINA BESTSELLERS */
 /* estilos pagina bestsellers */
 .pagina-bestsellers {
     background-color: white;
     color: black;
 }
+
 .pagina-bestsellers header nav ul li {
     display: flex;
 }
+
 /* estilo texto */
 .pagina-bestsellers header nav ul li a {
     text-decoration: none;
     color: black;
 }
+
 /* estilo texto principal */
 .pagina-bestsellers main h1 {
     text-align: center;
     margin-top: 20px;
 }
+
 /* estilo texto secundario */
 .pagina-bestsellers main h3 {
     text-align: center;
     line-height: 1.6;
 }
+
 /* estilo pie de pagina */
 .pagina-bestsellers footer {
     text-align: center;
@@ -287,30 +318,35 @@ footer p {
 }
 
 
-
+/* PAGINA ANILLOS */
 /* estilos pagina anillos */
 .pagina-anillos {
     background-color: white;
     color: black;
 }
+
 .pagina-anillos header nav ul li {
     display: flex;
 }
+
 /* estilo texto */
 .pagina-anillos header nav ul li a {
     text-decoration: none;
     color: black;
 }
+
 /* estilo texto principal */
 .pagina-anillos main h1 {
     text-align: center;
     margin-top: 20px;
 }
+
 /* estilo texto secundario */
 .pagina-anillos main h3 {
     text-align: center;
     line-height: 1.6;
 }
+
 /* estilo pie de pagina */
 .pagina-anillos footer {
     text-align: center;
@@ -320,30 +356,35 @@ footer p {
 }
 
 
-
+/* PAGINA PENDIENTES */
 /* estilos pagina pendientes */
 .pagina-pendientes {
     background-color: white;
     color: black;
 }
+
 .pagina-pendientes header nav ul li {
     display: flex;
 }
+
 /* estilo texto */
 .pagina-pendientes header nav ul li a {
     text-decoration: none;
     color: black;
 }
+
 /* estilo texto principal */
 .pagina-pendientes main h1 {
     text-align: center;
     margin-top: 20px;
 }
+
 /* estilo texto secundario */
 .pagina-pendientes main h3 {
     text-align: center;
     line-height: 1.6;
 }
+
 /* estilo pie de pagina */
 .pagina-pendientes footer {
     text-align: center;
@@ -353,30 +394,35 @@ footer p {
 }
 
 
-
+/* PAGINA PULSERAS */
 /* estilos pagina pulseras */
 .pagina-pulseras {
     background-color: white;
     color: black;
 }
+
 .pagina-pulseras header nav ul li {
     display: flex;
 }
+
 /* estilo texto */
 .pagina-pulseras header nav ul li a {
     text-decoration: none;
     color: black;
 }
+
 /* estilo texto principal */
 .pagina-pulseras main h1 {
     text-align: center;
     margin-top: 20px;
 }
+
 /* estilo texto secundario */
 .pagina-pulseras main h3 {
     text-align: center;
     line-height: 1.6;
 }
+
 /* estilo pie de pagina */
 .pagina-pulseras footer {
     text-align: center;
@@ -386,30 +432,35 @@ footer p {
 }
 
 
-
+/* PAGINA COLLARES */
 /* estilos pagina collares */
 .pagina-collares {
     background-color: white;
     color: black;
 }
+
 .pagina-collares header nav ul li {
     display: flex;
 }
+
 /* estilo texto */
 .pagina-collares header nav ul li a {
     text-decoration: none;
     color: black;
 }
+
 /* estilo texto principal */
 .pagina-collares main h1 {
     text-align: center;
     margin-top: 20px;
 }
+
 /* estilo texto secundario */
 .pagina-collares main h3 {
     text-align: center;
     line-height: 1.6;
 }
+
 /* estilo pie de pagina */
 .pagina-collares footer {
     text-align: center;
@@ -419,30 +470,35 @@ footer p {
 }
 
 
-
+/* PAGINA BLOG */
 /* estilos pagina blog */
 .pagina-blog {
     background-color: white;
     color: black;
 }
+
 .pagina-blog header nav ul li {
     display: flex;
 }
+
 /* estilo texto */
 .pagina-blog header nav ul li a {
     text-decoration: none;
     color: black;
 }
+
 /* estilo texto principal */
 .pagina-blog main h1 {
     text-align: center;
     margin-top: 20px;
 }
+
 /* estilo texto secundario */
 .pagina-blog main h3 {
     text-align: center;
     line-height: 1.6;
 }
+
 /* estilo pie de pagina */
 .pagina-blog footer {
     text-align: center;
@@ -473,7 +529,7 @@ footer p {
     }
 
     #categorias-productos div {
-        grid-template-columns: repeat (3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #informacion-importante {
@@ -489,7 +545,23 @@ footer p {
 /* ipad o tablets entre 768px y 1024px*/
 @media (min-width: 768px) and (max-width: 1024px) {
     .navegacion-principal nav ul {
-        gap: 40px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background-color: white;
+        left: 0;
+        width: auto;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
     }
 
     #momentos-especiales {
@@ -505,7 +577,7 @@ footer p {
     }
 
     #categorias-productos div {
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #informacion-importante {
@@ -517,17 +589,26 @@ footer p {
     }
 }
 
-
 /* celulares menores a 768px*/
 @media (max-width: 768px) {
-    .navegacion-principal {
+    .navegacion-principal nav ul {
+        display: none;
         flex-direction: column;
-        align-items: center;
+        position: absolute;
+        top: 60px;
+        background-color: white;
+        left: 0;
+        width: auto;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px;
     }
 
-    .navegacion-principal nav ul {
-        flex-direction: column;
-        gap: 20px;
+    #menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
     }
 
     #momentos-especiales {
@@ -543,7 +624,7 @@ footer p {
     }
 
     #categorias-productos div {
-        grid-template-columns: repeat (1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     #informacion-importante {
