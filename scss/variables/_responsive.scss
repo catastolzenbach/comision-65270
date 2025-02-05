@@ -1,0 +1,83 @@
+// -------- MEDIA QUERIES --------
+
+// Estilos para pantallas grandes (PC y laptops)
+@media (min-width: 1025px) {
+    .navegacion-principal nav ul {
+      gap: 2px;
+    }
+  
+    #momentos-especiales div {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    #productos-favoritos div {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    #categorias-productos div {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    #informacion-importante {
+      flex-direction: row;
+    }
+  
+    footer {
+      justify-content: center;
+    }
+  }
+  
+  // Estilos para tablets y pantallas medianas
+  @media (max-width: 1024px) {
+    .menu-icon {
+      display: flex;
+    }
+  
+    .navegacion-principal nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      background-color: white;
+      left: 0;
+      width: auto;
+      padding: 20px 0;
+      box-shadow: 0 4px 6px;
+  
+      #menu-toggle:checked + .menu-icon + nav ul {
+        display: flex;
+      }
+    }
+  
+    #momentos-especiales div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  // Estilos para móviles
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: flex;
+    }
+  
+    #momentos-especiales div {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    #productos-favoritos div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    #categorias-productos div {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    #informacion-importante {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer {
+      flex-direction: column;
+    }
+  }

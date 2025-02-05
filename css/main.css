@@ -1,638 +1,566 @@
-/* color fondo */
 body {
-    background-color: white;
+  background-color: white;
 }
 
-/* HEADER */
-/* barra superior */
-.barra-superior {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 1px;
-    margin: 0px;
-    font-size: 18px;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-/* navegacion principal */
-.navegacion-principal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: white;
-    border-bottom: 1px solid #ccc;
-}
-
-/* tamaño logo */
-.logo {
-    height: 40px;
-}
-
-/* menú de la navegación principal */
-.navegacion-principal nav ul {
-    display: flex;
-    list-style: none;
-    gap: 45px;
-    padding: 10px;
-    margin: 20px;
-    background-color: #d4f0f5;
-}
-
-/* lista de la navegacioó principar */
-.navegacion-principal nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px 10px;
-}
-
-/* color al pasar el cursos */
-.navegacion-principal nav ul li a:hover {
-    color: #007bff;
-}
-
-/* estilo bade del menú hamburguesa */
-.menu-icon {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
-
-.menu-icon span {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    border-radius: 2px;
-}
-
-/* ocultar checkbox */
-#menu-toggle {
-    display: none;
-}
-
-/* opciones (búsqueda y carrito de compras) */
-.opciones {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.opciones input {
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    padding: 6px 20px;
-    font-size: 14px;
-}
-
-.icono-carrito {
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
-
-/* MOMENTOS ESPECIALES */
-/* formato texto e imagenes en columnas */
-#momentos-especiales {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* formato texto */
-#momentos-especiales h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 45px;
-}
-
-/* formato imagenes */
-#momentos-especiales div {
-    display: grid;
+@media (min-width: 1025px) {
+  .navegacion-principal nav ul {
+    gap: 2px;
+  }
+  #momentos-especiales div {
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-/* estilo imagenes */
-#momentos-especiales img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-/* PRODUCTOS FAVORITOS */
-/* formato texto */
-#productos-favoritos h1 {
-    margin: 35px;
-    text-align: center;
-    font-size: 45px;
-}
-
-/* formato imagenes */
-#productos-favoritos div {
-    display: grid;
+  }
+  #productos-favoritos div {
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-/* estilo imagenes */
-#productos-favoritos img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-/* CATEGORIAS DE PRODUCTOS */
-/* formato texto */
-#categorias-productos h1 {
-    margin: 35px;
-    text-align: center;
-    font-size: 45px;
-}
-
-/* grilla imagenes */
-#categorias-productos div {
-    display: grid;
+  }
+  #categorias-productos div {
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    justify-items: center;
+  }
+  #informacion-importante {
+    flex-direction: row;
+  }
+  footer {
+    justify-content: center;
+  }
 }
-
-/* links en las imagenes */
-#categorias-productos a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
-
-/* estilo imagenes */
-#categorias-productos img {
-    width: 250px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* estilo imagenes */
-#categorias-productos p {
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-/* INFORMACIÓN IMPORTANTE */
-/* fila para las imagenes y texto */
-#informacion-importante {
+@media (max-width: 1024px) {
+  .menu-icon {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 15px;
-    background-color: #d4f0f5;
-    margin: 50px;
-}
-
-/* ordenar el div en columnas */
-#informacion-importante div {
+  }
+  .navegacion-principal nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    left: 0;
+    width: auto;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px;
+  }
+  .navegacion-principal nav ul #menu-toggle:checked + .menu-icon + nav ul {
     display: flex;
+  }
+  #momentos-especiales div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+  #momentos-especiales div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #productos-favoritos div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #categorias-productos div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #informacion-importante {
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    width: 130px;
-    height: 120px;
-    background-color: azure;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px;
+  }
+  footer {
+    flex-direction: column;
+  }
+}
+body {
+  background-color: white;
 }
 
-/* estilo textos */
+.barra-superior {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1px;
+  margin: 0px;
+  font-size: 18px;
+}
+
+.navegacion-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  padding: 15px 30px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+.navegacion-principal .logo {
+  height: 40px;
+}
+.navegacion-principal nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+  background-color: #d4f0f5;
+}
+.navegacion-principal nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.navegacion-principal nav ul li a:hover {
+  color: #007bff;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.opciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+.opciones input {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 6px 20px;
+  font-size: 14px;
+}
+.opciones .icono-carrito {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+#momentos-especiales {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+#momentos-especiales h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 45px;
+}
+#momentos-especiales div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  gap: 25px;
+}
+#momentos-especiales img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#productos-favoritos h1 {
+  margin: 35px;
+  text-align: center;
+  font-size: 45px;
+}
+#productos-favoritos div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  gap: 25px;
+}
+#productos-favoritos img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#categorias-productos h1 {
+  margin: 35px;
+  text-align: center;
+  font-size: 45px;
+}
+#categorias-productos div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  gap: 25px;
+  justify-items: center;
+}
+#categorias-productos a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+#categorias-productos img {
+  width: 250px;
+  height: auto;
+  margin-bottom: 10px;
+}
+#categorias-productos p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#informacion-importante {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 15px;
+  background-color: #d4f0f5;
+  margin: 50px;
+}
+#informacion-importante div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 130px;
+  height: 120px;
+  background-color: azure;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px;
+}
 #informacion-importante p {
-    margin: 5px 0;
-    font-size: 12px;
-    color: black;
-    height: 20px;
+  margin: 5px 0;
+  font-size: 12px;
+  color: black;
+  height: 20px;
 }
-
-/* estilo imagenes */
 #informacion-importante img {
-    width: auto;
-    height: 50px;
-    margin: 5px 0;
+  width: auto;
+  height: 50px;
+  margin: 5px 0;
 }
 
-/* FOOTER */
-/* formato footer */
 footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px;
-    font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  padding: 10px;
+  font-size: 14px;
 }
-
 footer p {
-    margin: 15px;
+  margin: 15px;
 }
 
-
-/* PAGINA NEW */
-/* estilos pagina new */
 .pagina-new {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
 .pagina-new header nav ul li {
-    display: flex;
+  display: flex;
 }
-
-/* estilo texto */
 .pagina-new header nav ul li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-/* estilo texto principal */
 .pagina-new main h1 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
-/* estilo texto secundario */
 .pagina-new main h3 {
-    text-align: center;
-    line-height: 1.6;
+  text-align: center;
+  line-height: 1.6;
 }
-
-/* estilo pie de pagina */
 .pagina-new footer {
-    text-align: center;
-    padding: 10px 15;
-    position: fixed;
-    bottom: 0;
+  text-align: center;
+  padding: 10px 15;
+  position: fixed;
+  bottom: 0;
 }
 
-
-/* PAGINA BESTSELLERS */
-/* estilos pagina bestsellers */
 .pagina-bestsellers {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
 .pagina-bestsellers header nav ul li {
-    display: flex;
+  display: flex;
 }
-
-/* estilo texto */
 .pagina-bestsellers header nav ul li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-/* estilo texto principal */
 .pagina-bestsellers main h1 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
-/* estilo texto secundario */
 .pagina-bestsellers main h3 {
-    text-align: center;
-    line-height: 1.6;
+  text-align: center;
+  line-height: 1.6;
 }
-
-/* estilo pie de pagina */
 .pagina-bestsellers footer {
-    text-align: center;
-    padding: 10px 15;
-    position: fixed;
-    bottom: 0;
+  text-align: center;
+  padding: 10px 15;
+  position: fixed;
+  bottom: 0;
 }
 
-
-/* PAGINA ANILLOS */
-/* estilos pagina anillos */
 .pagina-anillos {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
 .pagina-anillos header nav ul li {
-    display: flex;
+  display: flex;
 }
-
-/* estilo texto */
 .pagina-anillos header nav ul li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-/* estilo texto principal */
 .pagina-anillos main h1 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
-/* estilo texto secundario */
 .pagina-anillos main h3 {
-    text-align: center;
-    line-height: 1.6;
+  text-align: center;
+  line-height: 1.6;
 }
-
-/* estilo pie de pagina */
 .pagina-anillos footer {
-    text-align: center;
-    padding: 10px 15;
-    position: fixed;
-    bottom: 0;
+  text-align: center;
+  padding: 10px 15;
+  position: fixed;
+  bottom: 0;
 }
 
-
-/* PAGINA PENDIENTES */
-/* estilos pagina pendientes */
 .pagina-pendientes {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
 .pagina-pendientes header nav ul li {
-    display: flex;
+  display: flex;
 }
-
-/* estilo texto */
 .pagina-pendientes header nav ul li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-/* estilo texto principal */
 .pagina-pendientes main h1 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
-/* estilo texto secundario */
 .pagina-pendientes main h3 {
-    text-align: center;
-    line-height: 1.6;
+  text-align: center;
+  line-height: 1.6;
 }
-
-/* estilo pie de pagina */
 .pagina-pendientes footer {
-    text-align: center;
-    padding: 10px 15;
-    position: fixed;
-    bottom: 0;
+  text-align: center;
+  padding: 10px 15;
+  position: fixed;
+  bottom: 0;
 }
 
-
-/* PAGINA PULSERAS */
-/* estilos pagina pulseras */
 .pagina-pulseras {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
 .pagina-pulseras header nav ul li {
-    display: flex;
+  display: flex;
 }
-
-/* estilo texto */
 .pagina-pulseras header nav ul li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-/* estilo texto principal */
 .pagina-pulseras main h1 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
-/* estilo texto secundario */
 .pagina-pulseras main h3 {
-    text-align: center;
-    line-height: 1.6;
+  text-align: center;
+  line-height: 1.6;
 }
-
-/* estilo pie de pagina */
 .pagina-pulseras footer {
-    text-align: center;
-    padding: 10px 15;
-    position: fixed;
-    bottom: 0;
+  text-align: center;
+  padding: 10px 15;
+  position: fixed;
+  bottom: 0;
 }
 
-
-/* PAGINA COLLARES */
-/* estilos pagina collares */
 .pagina-collares {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
 .pagina-collares header nav ul li {
-    display: flex;
+  display: flex;
 }
-
-/* estilo texto */
 .pagina-collares header nav ul li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-/* estilo texto principal */
 .pagina-collares main h1 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
-/* estilo texto secundario */
 .pagina-collares main h3 {
-    text-align: center;
-    line-height: 1.6;
+  text-align: center;
+  line-height: 1.6;
 }
-
-/* estilo pie de pagina */
 .pagina-collares footer {
-    text-align: center;
-    padding: 10px 15;
-    position: fixed;
-    bottom: 0;
+  text-align: center;
+  padding: 10px 15;
+  position: fixed;
+  bottom: 0;
 }
 
-
-/* PAGINA BLOG */
-/* estilos pagina blog */
 .pagina-blog {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
-
 .pagina-blog header nav ul li {
-    display: flex;
+  display: flex;
 }
-
-/* estilo texto */
 .pagina-blog header nav ul li a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-
-/* estilo texto principal */
 .pagina-blog main h1 {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-
-/* estilo texto secundario */
 .pagina-blog main h3 {
-    text-align: center;
-    line-height: 1.6;
+  text-align: center;
+  line-height: 1.6;
 }
-
-/* estilo pie de pagina */
 .pagina-blog footer {
-    text-align: center;
-    padding: 10px 15;
-    position: fixed;
-    bottom: 0;
+  text-align: center;
+  padding: 10px 15;
+  position: fixed;
+  bottom: 0;
 }
 
-
-
-/* MEDIA QUERIES PARA DIF DISPOSITIVOS */
-/* computadores mayores a 1024px */
-@media (min-widht: 1025px) {
-    .navegacion-principal nav ul {
-        gap: 120px;
-    }
-
-    #momentos-especiales {
-        grid-template-columns: 1fr 3fr;
-    }
-
-    #momentos-especiales div {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #productos-favoritos div {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    #categorias-productos div {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #informacion-importante {
-        flex-direction: row;
-    }
-
-    footer {
-        flex-direction: row;
-        justify-content: center;
-    }
+@media (min-width: 1025px) {
+  .navegacion-principal nav ul {
+    gap: 2px;
+  }
+  #momentos-especiales {
+    grid-template-columns: 1fr 3fr;
+  }
+  #momentos-especiales div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #productos-favoritos div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #categorias-productos div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #informacion-importante {
+    flex-direction: row;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
-
-/* ipad o tablets entre 768px y 1024px*/
 @media (min-width: 768px) and (max-width: 1024px) {
-    .navegacion-principal nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        background-color: white;
-        left: 0;
-        width: auto;
-        padding: 20px 0;
-        box-shadow: 0 4px 6px;
-    }
-
-    #menu-toggle:checked + .menu-icon + nav ul {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: flex;
-    }
-
-    #momentos-especiales {
-        grid-template-columns: 1fr 2fr;
-    }
-
-    #momentos-especiales div {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #productos-favoritos div {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #categorias-productos div {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #informacion-importante {
-        flex-direction: row;
-    }
-
-    footer {
-        flex-direction: row;
-    }
+  .navegacion-principal nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    left: 0;
+    width: auto;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px;
+  }
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+  .menu-icon {
+    display: flex;
+  }
+  #momentos-especiales {
+    grid-template-columns: 1fr 2fr;
+  }
+  #momentos-especiales div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #productos-favoritos div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #categorias-productos div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #informacion-importante {
+    flex-direction: row;
+  }
+  footer {
+    flex-direction: row;
+  }
 }
-
-/* celulares menores a 768px*/
 @media (max-width: 768px) {
-    .navegacion-principal nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        background-color: white;
-        left: 0;
-        width: auto;
-        padding: 20px 0;
-        box-shadow: 0 4px 6px;
-    }
-
-    #menu-toggle:checked + .menu-icon + nav ul {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: flex;
-    }
-
-    #momentos-especiales {
-        grid-template-columns: 1fr;
-    }
-
-    #momentos-especiales div {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    #productos-favoritos div {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #categorias-productos div {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    #informacion-importante {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer {
-        flex-direction: column;
-    }
+  .navegacion-principal nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    left: 0;
+    width: 600px;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px;
+  }
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+  .menu-icon {
+    display: flex;
+  }
+  #momentos-especiales {
+    grid-template-columns: 1fr;
+  }
+  #momentos-especiales div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #productos-favoritos div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #categorias-productos div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #informacion-importante {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
+
+/*# sourceMappingURL=main.css.map */

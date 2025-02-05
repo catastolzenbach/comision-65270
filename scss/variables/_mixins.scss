@@ -1,0 +1,16 @@
+// MIXINS 
+// Mixin para crear flexbox con valores predeterminados
+@mixin flex($justify: center, $align: center, $direction: row, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+// Mixin para crear grid con columnas personalizadas
+@mixin grid($columns, $gap: 25px) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
