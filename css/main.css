@@ -11,26 +11,33 @@ a {
   .navegacion-principal nav ul {
     gap: 2px;
   }
+
   #momentos-especiales div {
     grid-template-columns: repeat(3, 1fr);
   }
+
   #productos-favoritos div {
     grid-template-columns: repeat(4, 1fr);
   }
+
   #categorias-productos div {
     grid-template-columns: repeat(3, 1fr);
   }
+
   #informacion-importante {
     flex-direction: row;
   }
+
   footer {
     justify-content: center;
   }
 }
+
 @media (max-width: 1024px) {
   .menu-icon {
     display: flex;
   }
+
   .navegacion-principal nav ul {
     display: none;
     flex-direction: column;
@@ -42,34 +49,43 @@ a {
     padding: 20px 0;
     box-shadow: 0 4px 6px;
   }
-  .navegacion-principal nav ul #menu-toggle:checked + .menu-icon + nav ul {
+
+  .navegacion-principal nav ul #menu-toggle:checked+.menu-icon+nav ul {
     display: flex;
   }
+
   #momentos-especiales div {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 768px) {
   .menu-icon {
     display: flex;
   }
+
   #momentos-especiales div {
     grid-template-columns: repeat(1, 1fr);
   }
+
   #productos-favoritos div {
     grid-template-columns: repeat(2, 1fr);
   }
+
   #categorias-productos div {
     grid-template-columns: repeat(1, 1fr);
   }
+
   #informacion-importante {
     flex-direction: column;
     align-items: center;
   }
+
   footer {
     flex-direction: column;
   }
 }
+
 body {
   background-color: white;
 }
@@ -93,9 +109,11 @@ body {
   background-color: white;
   border-bottom: 1px solid #ccc;
 }
+
 .navegacion-principal .logo {
   height: 40px;
 }
+
 .navegacion-principal nav ul {
   display: flex;
   justify-content: center;
@@ -107,6 +125,7 @@ body {
   margin: 10px;
   background-color: #d4f0f5;
 }
+
 .navegacion-principal nav ul li a {
   text-decoration: none;
   color: black;
@@ -114,6 +133,7 @@ body {
   font-weight: bold;
   padding: 5px 10px;
 }
+
 .navegacion-principal nav ul li a:hover {
   color: #007bff;
 }
@@ -124,6 +144,7 @@ body {
   gap: 5px;
   cursor: pointer;
 }
+
 .menu-icon span {
   width: 25px;
   height: 3px;
@@ -143,12 +164,14 @@ body {
   gap: 15px;
   align-items: center;
 }
+
 .opciones input {
   border: 1px solid #ccc;
   border-radius: 2px;
   padding: 6px 20px;
   font-size: 14px;
 }
+
 .opciones .icono-carrito {
   font-size: 18px;
   text-decoration: none;
@@ -164,17 +187,20 @@ body {
   gap: 20px;
   padding: 20px;
 }
+
 #momentos-especiales h1 {
   margin: 0;
   text-align: center;
   font-size: 45px;
 }
+
 #momentos-especiales div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   gap: 25px;
 }
+
 #momentos-especiales img {
   width: 100%;
   height: auto;
@@ -187,12 +213,14 @@ body {
   text-align: center;
   font-size: 45px;
 }
+
 #productos-favoritos div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   gap: 25px;
 }
+
 #productos-favoritos img {
   width: 100%;
   height: auto;
@@ -205,6 +233,7 @@ body {
   text-align: center;
   font-size: 45px;
 }
+
 #categorias-productos div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -212,16 +241,19 @@ body {
   gap: 25px;
   justify-items: center;
 }
+
 #categorias-productos a {
   text-decoration: none;
   color: black;
   text-align: center;
 }
+
 #categorias-productos img {
   width: 250px;
   height: auto;
   margin-bottom: 10px;
 }
+
 #categorias-productos p {
   margin: 0;
   font-size: 16px;
@@ -240,6 +272,7 @@ body {
   background-color: #d4f0f5;
   margin: 50px;
 }
+
 #informacion-importante div {
   display: flex;
   justify-content: center;
@@ -256,12 +289,14 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 5px;
 }
+
 #informacion-importante p {
   margin: 5px 0;
   font-size: 12px;
   color: black;
   height: 20px;
 }
+
 #informacion-importante img {
   width: auto;
   height: 50px;
@@ -277,6 +312,7 @@ footer {
   padding: 10px;
   font-size: 14px;
 }
+
 footer p {
   margin: 15px;
 }
@@ -285,21 +321,26 @@ footer p {
   background-color: white;
   color: black;
 }
+
 .pagina-new header nav ul li {
   display: flex;
 }
+
 .pagina-new header nav ul li a {
   text-decoration: none;
   color: black;
 }
+
 .pagina-new main h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 .pagina-new main h3 {
   text-align: center;
   line-height: 1.6;
 }
+
 .pagina-new footer {
   text-align: center;
   padding: 10px 15;
@@ -311,21 +352,26 @@ footer p {
   background-color: white;
   color: black;
 }
+
 .pagina-bestsellers header nav ul li {
   display: flex;
 }
+
 .pagina-bestsellers header nav ul li a {
   text-decoration: none;
   color: black;
 }
+
 .pagina-bestsellers main h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 .pagina-bestsellers main h3 {
   text-align: center;
   line-height: 1.6;
 }
+
 .pagina-bestsellers footer {
   text-align: center;
   padding: 10px 15;
@@ -337,21 +383,26 @@ footer p {
   background-color: white;
   color: black;
 }
+
 .pagina-anillos header nav ul li {
   display: flex;
 }
+
 .pagina-anillos header nav ul li a {
   text-decoration: none;
   color: black;
 }
+
 .pagina-anillos main h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 .pagina-anillos main h3 {
   text-align: center;
   line-height: 1.6;
 }
+
 .pagina-anillos footer {
   text-align: center;
   padding: 10px 15;
@@ -363,21 +414,26 @@ footer p {
   background-color: white;
   color: black;
 }
+
 .pagina-pendientes header nav ul li {
   display: flex;
 }
+
 .pagina-pendientes header nav ul li a {
   text-decoration: none;
   color: black;
 }
+
 .pagina-pendientes main h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 .pagina-pendientes main h3 {
   text-align: center;
   line-height: 1.6;
 }
+
 .pagina-pendientes footer {
   text-align: center;
   padding: 10px 15;
@@ -389,21 +445,26 @@ footer p {
   background-color: white;
   color: black;
 }
+
 .pagina-pulseras header nav ul li {
   display: flex;
 }
+
 .pagina-pulseras header nav ul li a {
   text-decoration: none;
   color: black;
 }
+
 .pagina-pulseras main h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 .pagina-pulseras main h3 {
   text-align: center;
   line-height: 1.6;
 }
+
 .pagina-pulseras footer {
   text-align: center;
   padding: 10px 15;
@@ -415,21 +476,26 @@ footer p {
   background-color: white;
   color: black;
 }
+
 .pagina-collares header nav ul li {
   display: flex;
 }
+
 .pagina-collares header nav ul li a {
   text-decoration: none;
   color: black;
 }
+
 .pagina-collares main h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 .pagina-collares main h3 {
   text-align: center;
   line-height: 1.6;
 }
+
 .pagina-collares footer {
   text-align: center;
   padding: 10px 15;
@@ -441,21 +507,26 @@ footer p {
   background-color: white;
   color: black;
 }
+
 .pagina-blog header nav ul li {
   display: flex;
 }
+
 .pagina-blog header nav ul li a {
   text-decoration: none;
   color: black;
 }
+
 .pagina-blog main h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 .pagina-blog main h3 {
   text-align: center;
   line-height: 1.6;
 }
+
 .pagina-blog footer {
   text-align: center;
   padding: 10px 15;
@@ -467,26 +538,33 @@ footer p {
   .navegacion-principal nav ul {
     gap: 2px;
   }
+
   #momentos-especiales {
     grid-template-columns: 1fr 3fr;
   }
+
   #momentos-especiales div {
     grid-template-columns: repeat(3, 1fr);
   }
+
   #productos-favoritos div {
     grid-template-columns: repeat(4, 1fr);
   }
+
   #categorias-productos div {
     grid-template-columns: repeat(3, 1fr);
   }
+
   #informacion-importante {
     flex-direction: row;
   }
+
   footer {
     flex-direction: row;
     justify-content: center;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .navegacion-principal nav ul {
     display: none;
@@ -499,31 +577,40 @@ footer p {
     padding: 20px 0;
     box-shadow: 0 4px 6px;
   }
-  #menu-toggle:checked + .menu-icon + nav ul {
+
+  #menu-toggle:checked+.menu-icon+nav ul {
     display: flex;
   }
+
   .menu-icon {
     display: flex;
   }
+
   #momentos-especiales {
     grid-template-columns: 1fr 2fr;
   }
+
   #momentos-especiales div {
     grid-template-columns: repeat(2, 1fr);
   }
+
   #productos-favoritos div {
     grid-template-columns: repeat(3, 1fr);
   }
+
   #categorias-productos div {
     grid-template-columns: repeat(2, 1fr);
   }
+
   #informacion-importante {
     flex-direction: row;
   }
+
   footer {
     flex-direction: row;
   }
 }
+
 @media (max-width: 768px) {
   .navegacion-principal nav ul {
     display: none;
@@ -536,28 +623,36 @@ footer p {
     padding: 20px 0;
     box-shadow: 0 4px 6px;
   }
-  #menu-toggle:checked + .menu-icon + nav ul {
+
+  #menu-toggle:checked+.menu-icon+nav ul {
     display: flex;
   }
+
   .menu-icon {
     display: flex;
   }
+
   #momentos-especiales {
     grid-template-columns: 1fr;
   }
+
   #momentos-especiales div {
     grid-template-columns: repeat(1, 1fr);
   }
+
   #productos-favoritos div {
     grid-template-columns: repeat(2, 1fr);
   }
+
   #categorias-productos div {
     grid-template-columns: repeat(1, 1fr);
   }
+
   #informacion-importante {
     flex-direction: column;
     align-items: center;
   }
+
   footer {
     flex-direction: column;
   }

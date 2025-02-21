@@ -111,6 +111,7 @@ body {
         object-fit: cover;
         border-radius: 5px;
     }
+
 }
 
 // PRODUCTOS FAVORITOS
@@ -205,14 +206,22 @@ body {
 
 // FOOTER
 footer {
-    @include flex(flex-start, center);
+    @include flex(flex-end, center); // cambiar flex-start a flex-end
     padding: 10px;
     font-size: 14px;
+    position: fixed; // añadir position fixed
+    bottom: 0; // fijar al fondo
+    right: 0; // fijar a la derecha
+    background-color: $color-fondo; // añadir fondo para legibilidad
+    width: auto; // ajustar ancho al contenido
+    flex-direction: row; // forzar dirección en fila
 
     p {
         margin: 15px;
+        white-space: nowrap; // evitar que el texto se rompa en múltiples líneas
     }
 }
+
 
 // Estilos comunes para todas las páginas
 @mixin page-styles {
@@ -398,6 +407,7 @@ footer {
     }
 
     footer {
-        flex-direction: column;
+        flex-direction: row;
+        width: auto;
     }
 }
