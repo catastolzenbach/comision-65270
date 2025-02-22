@@ -206,15 +206,12 @@ body {
 
 // FOOTER
 footer {
-    @include flex(flex-end, center); // cambiar flex-start a flex-end
-    padding: 10px;
-    font-size: 14px;
-    position: fixed; // añadir position fixed
-    bottom: 0; // fijar al fondo
-    right: 0; // fijar a la derecha
-    background-color: $color-fondo; // añadir fondo para legibilidad
-    width: auto; // ajustar ancho al contenido
-    flex-direction: row; // forzar dirección en fila
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15;
+    position: absolute;
 
     p {
         margin: 15px;
