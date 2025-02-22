@@ -317,6 +317,30 @@ footer p {
   margin: 15px;
 }
 
+.pagina-principal {
+  background-color: white;
+  color: black;
+}
+
+.pagina-principal header nav ul li {
+  display: flex;
+}
+
+.pagina-principal header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.pagina-principal main h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagina-principal main h3 {
+  text-align: center;
+  line-height: 1.6;
+}
+
 .pagina-new {
   background-color: white;
   color: black;
@@ -339,13 +363,6 @@ footer p {
 .pagina-new main h3 {
   text-align: center;
   line-height: 1.6;
-}
-
-.pagina-new footer {
-  text-align: center;
-  padding: 10px 15;
-  position: fixed;
-  bottom: 0;
 }
 
 .pagina-bestsellers {
@@ -372,13 +389,6 @@ footer p {
   line-height: 1.6;
 }
 
-.pagina-bestsellers footer {
-  text-align: center;
-  padding: 10px 15;
-  position: fixed;
-  bottom: 0;
-}
-
 .pagina-anillos {
   background-color: white;
   color: black;
@@ -401,13 +411,6 @@ footer p {
 .pagina-anillos main h3 {
   text-align: center;
   line-height: 1.6;
-}
-
-.pagina-anillos footer {
-  text-align: center;
-  padding: 10px 15;
-  position: fixed;
-  bottom: 0;
 }
 
 .pagina-pendientes {
@@ -434,13 +437,6 @@ footer p {
   line-height: 1.6;
 }
 
-.pagina-pendientes footer {
-  text-align: center;
-  padding: 10px 15;
-  position: fixed;
-  bottom: 0;
-}
-
 .pagina-pulseras {
   background-color: white;
   color: black;
@@ -463,13 +459,6 @@ footer p {
 .pagina-pulseras main h3 {
   text-align: center;
   line-height: 1.6;
-}
-
-.pagina-pulseras footer {
-  text-align: center;
-  padding: 10px 15;
-  position: fixed;
-  bottom: 0;
 }
 
 .pagina-collares {
@@ -496,13 +485,6 @@ footer p {
   line-height: 1.6;
 }
 
-.pagina-collares footer {
-  text-align: center;
-  padding: 10px 15;
-  position: fixed;
-  bottom: 0;
-}
-
 .pagina-blog {
   background-color: white;
   color: black;
@@ -525,13 +507,6 @@ footer p {
 .pagina-blog main h3 {
   text-align: center;
   line-height: 1.6;
-}
-
-.pagina-blog footer {
-  text-align: center;
-  padding: 10px 15;
-  position: fixed;
-  bottom: 0;
 }
 
 @media (min-width: 1025px) {

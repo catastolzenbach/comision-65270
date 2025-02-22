@@ -258,6 +258,10 @@ footer {
 }
 
 // Aplicar estilos a cada página
+.pagina-principal {
+    @include page-styles;
+}
+
 .pagina-new {
     @include page-styles;
 }
@@ -284,130 +288,4 @@ footer {
 
 .pagina-blog {
     @include page-styles;
-}
-
-// MEDIA QUERIES
-@media (min-width: 1025px) {
-    .navegacion-principal nav ul {
-        gap: 2px;
-    }
-
-    #momentos-especiales {
-        grid-template-columns: 1fr 3fr;
-
-        div {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    #productos-favoritos div {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    #categorias-productos div {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #informacion-importante {
-        flex-direction: row;
-    }
-
-    footer {
-        flex-direction: row;
-        justify-content: center;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .navegacion-principal nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        background-color: $color-fondo;
-        left: 0;
-        width: auto;
-        padding: 20px 0;
-        box-shadow: 0 4px 6px;
-    }
-
-    #menu-toggle:checked+.menu-icon+nav ul {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: flex;
-    }
-
-    #momentos-especiales {
-        grid-template-columns: 1fr 2fr;
-
-        div {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    #productos-favoritos div {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    #categorias-productos div {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #informacion-importante {
-        flex-direction: row;
-    }
-
-    footer {
-        flex-direction: row;
-    }
-}
-
-@media (max-width: 768px) {
-    .navegacion-principal nav ul {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        background-color: $color-fondo;
-        left: 0;
-        width: 600px;
-        padding: 20px 0;
-        box-shadow: 0 4px 6px;
-    }
-
-    #menu-toggle:checked+.menu-icon+nav ul {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: flex;
-    }
-
-    #momentos-especiales {
-        grid-template-columns: 1fr;
-
-        div {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-    #productos-favoritos div {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    #categorias-productos div {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    #informacion-importante {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer {
-        flex-direction: row;
-        width: auto;
-    }
 }
