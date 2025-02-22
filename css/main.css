@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #e0d9dd;
 }
 
 a {
@@ -43,7 +43,7 @@ a {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    background-color: white;
+    background-color: #e0d9dd;
     left: 0;
     width: auto;
     padding: 20px 0;
@@ -87,11 +87,11 @@ a {
 }
 
 body {
-  background-color: white;
+  background-color: #e0d9dd;
 }
 
 .barra-superior {
-  background-color: black;
+  background-color: #684145;
   color: white;
   text-align: center;
   padding: 1px;
@@ -106,7 +106,7 @@ body {
   flex-direction: row;
   gap: 0;
   padding: 15px 30px;
-  background-color: white;
+  background-color: #e0d9dd;
   border-bottom: 1px solid #ccc;
 }
 
@@ -123,19 +123,19 @@ body {
   list-style: none;
   padding: 10px;
   margin: 10px;
-  background-color: #d4f0f5;
+  background-color: #b092a4;
 }
 
 .navegacion-principal nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #e0d9dd;
   font-size: 16px;
   font-weight: bold;
   padding: 5px 10px;
 }
 
 .navegacion-principal nav ul li a:hover {
-  color: #007bff;
+  color: #e0d9dd;
 }
 
 .menu-icon {
@@ -269,7 +269,7 @@ body {
   flex-wrap: wrap;
   padding: 20px;
   gap: 15px;
-  background-color: #d4f0f5;
+  background-color: #b092a4;
   margin: 50px;
 }
 
@@ -285,7 +285,7 @@ body {
   text-align: center;
   width: 130px;
   height: 120px;
-  background-color: azure;
+  background-color: #e0d9dd;
   border-radius: 8px;
   box-shadow: 0 2px 5px;
 }
